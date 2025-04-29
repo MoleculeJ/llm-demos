@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maryland Election Results</title>
+  <link rel="stylesheet" href="styles.css">
 
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    #map {
+      height: 500px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Maryland Election Results</h1>
+
+    <h2>Statewide Totals</h2>
+
+    <!-- Choropleth Map -->
+    <div id="map"></div>
+
+    <!-- Statewide Table -->
+    <table id="statewide-table">
+      <thead>
+        <tr>
+          <th>Candidate</th>
+          <th>Total Votes</th>
+          <th>Percentage</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <!-- Statewide Chart -->
+    <canvas id="statewideChart" width="600" height="300"></canvas>
+
+    <h2>County Breakdown</h2>
+    <label for="county-select">Select County:</label>
+    <select id="county-select">
+      <option value="">-- Select a county --</option>
+    </select>
+
+    <!-- County Table -->
+    <table id="county-table" style="display: none;">
+      <thead>
+        <tr>
+          <th>Candidate</th>
+          <th>Votes</th>
+          <th>Percentage</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <!-- County Chart -->
+    <canvas id="countyChart" width="600" height="300" style="display: none;"></canvas>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>

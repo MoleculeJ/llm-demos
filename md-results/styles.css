@@ -1,1 +1,38 @@
-
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  h1, h2 {
+    color: #0056b3;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #e9ecef;
+  }
+  
+  select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  canvas {
+    margin-top: 2rem;
+  }
+  
